@@ -3,7 +3,9 @@
 const path = require('path');
 
 const nextConfig = {
-  reactStrictMode: true,
+  experimental: {
+    forceSwcTransforms: true,
+  },
   webpack(config) {
     config.resolve = {
       alias: {
@@ -16,6 +18,7 @@ const nextConfig = {
       },
       ...config.resolve,
     };
+    return config;
   },
 };
 
