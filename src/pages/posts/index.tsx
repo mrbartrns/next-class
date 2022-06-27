@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 import { Post } from '@/interfaces';
-import * as S from './styles';
 
 export const getServerSideProps = async () => {
   const { data: posts } = await axios.get(
@@ -17,7 +16,7 @@ interface Props {
   posts: Post[];
 }
 
-const About: React.FC<Props> = ({ posts }) => {
+const Posts: React.FC<Props> = ({ posts }) => {
   return (
     <div>
       <ul>
@@ -33,4 +32,4 @@ const About: React.FC<Props> = ({ posts }) => {
   );
 };
 
-export default About;
+export default Posts;
