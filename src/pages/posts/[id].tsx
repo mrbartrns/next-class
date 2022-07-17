@@ -31,7 +31,7 @@ export const getServerSideProps = async (ctx: NextPageContext) => {
   };
 };
 
-const Post: React.FC<Props> = ({ post }) => {
+export default function Post({ post }: Props) {
   const router = useRouter();
   return (
     <div>
@@ -39,6 +39,4 @@ const Post: React.FC<Props> = ({ post }) => {
       <p>{post.body}</p>
     </div>
   );
-};
-
-export default Post;
+}

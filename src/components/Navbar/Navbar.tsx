@@ -1,12 +1,9 @@
-import React from 'react';
 import Link from 'next/link';
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   return (
     <nav>
       <Link href="/">Home</Link>
     </nav>
   );
-};
-
-export default Navbar;
+}

@@ -1,7 +1,3 @@
-import React from 'react';
-
-const NotFound: React.FC = () => {
+export default function NotFound() {
   return <h2>404 not found</h2>;
-};
-
-export default NotFound;
+}

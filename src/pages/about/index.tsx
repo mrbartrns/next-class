@@ -1,13 +1,9 @@
 import React from 'react';
-import Navbar from '@components/Navbar';
 
-const About: React.FC = () => {
+export default function About() {
   return (
     <div>
       <h1>About Page</h1>
-      <Navbar />
     </div>
   );
-};
-
-export default About;
+}

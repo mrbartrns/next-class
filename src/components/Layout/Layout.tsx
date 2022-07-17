@@ -1,18 +1,15 @@
 import React from 'react';
-import type { NextPage } from 'next';
 import Navbar from '@components/Navbar';
 
 interface Props {
   children: React.ReactNode;
 }
 
-const Layout: NextPage<Props> = ({ children }) => {
+export default function Layout({ children }: Props) {
   return (
     <>
       <Navbar />
       {children}
     </>
   );
-};
-
-export default Layout;
+}

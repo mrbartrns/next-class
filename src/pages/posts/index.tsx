@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 import { Post } from '@/interfaces';
@@ -20,7 +19,7 @@ interface Props {
   posts: Post[];
 }
 
-const Posts: React.FC<Props> = ({ posts }) => {
+export default function Posts({ posts }: Props) {
   return (
     <div>
       <ul>
@@ -36,6 +35,4 @@ const Posts: React.FC<Props> = ({ posts }) => {
       </ul>
     </div>
   );
-};
-
-export default Posts;
+}
